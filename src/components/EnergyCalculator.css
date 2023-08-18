@@ -1,0 +1,227 @@
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    max-width: 600px;
+    margin-right: auto;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .calculator-transition {
+    opacity: 1;
+    transform: translateX(20px);
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 1em;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .input-field {
+    padding: 1em;
+    margin: 0.25em 0; /* Redusert fra 0.5em til 0.25em */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+  
+  .calculate-button {
+    padding: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .calculate-button:hover {
+    background-color: #0056b3;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .logo-container {
+    margin-left: auto;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .logo-container-transition {
+    opacity: 0;
+    transform: scale(0.5);
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .chart {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .chart-transition {
+    opacity: 1;
+    transform: translateX(20px);
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  .results-container {
+    display: flex;
+    justify-content: space-around;  
+    width: 100%;
+    padding: 20px
+    
+  }
+  
+  .result {
+    font-size: 24px;
+  }
+  
+  .result span {
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  body {
+    font-family: 'GjensidigeSans', sans-serif;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .button {
+    padding: 1em;
+    color: #fff;
+    background-color: #090d33;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    margin: 0.5em;
+    font-family: 'GjensidigeSans';
+    src: url('../fonts/GjensidigeSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .button:hover {
+    background-color: #050a1b; /* en mørkere farge for hover-effekt */
+  }
+  
+
+  
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 1em; /* Ny margin lagt til her */
+}
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #090d33;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #090d33;
+    cursor: pointer;
+  }

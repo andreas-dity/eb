@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import EnergyCalculator from './components/EnergyCalculator';
+import banner from './banner.png';
+import footer from './footer.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <img src={banner} className="App-banner" alt="banner" />
+    <main>
+      <EnergyCalculator />
+      <img src={footer} className="App-footer" alt="footer" />
+    </main>
+  </div>
   );
 }
 

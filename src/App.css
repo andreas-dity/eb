@@ -1,38 +1,96 @@
+@font-face {
+  font-family: 'GjensidigeSans';
+  src: url('./fonts/GjensidigeSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'GjensidigeSans';
+  src: url('./fonts/GjensidigeSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'GjensidigeSans', sans-serif; /* Bruk GjensidigeSans som førsteprioritet, fallback til en sans-serif font */
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+}
+
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.calculate-button {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calculate-button:hover {
+  background: #0056b3;
+}
+
+.App-banner {
+  width: 100%; /* or whatever percentage or fixed size you want */
+  height: auto; /* to keep aspect ratio */
+  display: block; /* to center the image */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App-footer {
+  width: 70%; /* or whatever percentage or fixed size you want */
+  height: auto; /* to keep aspect ratio */
+  display: block; /* to center the image */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+body {
+  font-family: 'Gjensidige Sans', sans-serif;
 }
